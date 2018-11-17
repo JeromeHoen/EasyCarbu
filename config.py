@@ -1,4 +1,4 @@
-GOOGLE_API_KEY = "AIzaSyA02P9NLGJjaw5z-0nPFcN250jTiLcyQRU"
+GOOGLE_API_KEY = 
 DIST_TO_CHECK = 30
 MAX_SPEED = 60 / 3.6
 INSTANT_DATA_URL = "https://donnees.roulez-eco.fr/opendata/instantane"
