@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Trouvez la station essence la moins chère autour de soi ou sur son trajet.">
+    <meta name="author" content="Jérôme Hoen">
+
+    <title>Ma Station Essence</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../static/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/landing-page.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ma Station Essence</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Masthead -->
+    <header class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-7 mx-auto">
+            <h1 class="mb-5">Trouvez la station essence la moins chère !</h1>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form method="post" action="" enctype="multipart/form-data">
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <input type="link" class="form-control form-control-lg" placeholder="Collez le lien Google Maps" name = "maps_url" id="maps_url">
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Go!</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <label for="gas" class="col-sm-6 control-label">Carburant</label>
+                  <div class="col-sm-3 mb-2">
+                      <select class="form-control" name="gas" id="gas">
+                        <option value="1" selected>Gazole</option>
+                        <option value="2">SP95</option>
+                        <option value="3">E85</option>
+                        <option value="4">GPLc</option>
+                        <option value="5">E10</option>
+                        <option value="6">SP98</option>
+                      </select>
+                   </div>
+                </div>
+                <div class="row">
+                  <label for="liters" class="col-sm-6 control-label">Réservoir (L)</label>
+                  <div class="col-sm-3 mb-2">
+                    <input type="number" class="form-control" value="40" min="10" step="1" name="liters" id="liters">
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="consumption" class="col-sm-6 control-label">Consommation (L/100 km)</label>
+                  <div class="col-sm-3 mb-2">
+                    <input type="number" class="form-control" value="5.9" min="1" step="0.1" name="consumption" id="consumption">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <label for="start" class="col-sm-6 control-label">Début (km)</label>
+                    <div class="col-sm-3 mb-2">
+                      <input type="number" class="form-control" value="0" min="0" step="1" name="start" id="start">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label for="end" class="col-sm-6 control-label">Fin (km)</label>
+                    <div class="col-sm-3 mb-2">
+                      <input type="number" class="form-control" value="200" min="0" step="1" name="end" id="end">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label for="trade_off" class="col-sm-6 control-label">Coût du détour de 15 min</label>
+                    <div class="col-sm-3 mb-2">
+                      <input type="number" class="form-control" value="5" min="1" step="0.5" name="trade_off" id="trade_off">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <a href="https://www.paypal.me/MaStationEssence/5eur" target="_blank">
+              <img src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_LG.gif" alt="Bouton de don PayPal" title="Aidez-moi à maintenir le site !" />
+            </a>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Ma Station Essence 2018. Tous droits réservés.</p>
+          </div>
+
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-instagram fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
